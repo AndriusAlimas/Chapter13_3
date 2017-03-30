@@ -35,7 +35,7 @@ public class CompressionFilter implements Filter {
 		if(valid_encodings.indexOf("gzip") > -1){
 			// CompressionResponseWrapper is a custom class of HttpServletResponse:
 		  CompressionResponseWrapper wrappedResp = new CompressionResponseWrapper(response);
-		  wrappedResp.setHeader("Content-Encoding", "gzip"); // declare that the response content
+		  //wrappedResp.setHeader("Content-Encoding", "gzip"); // declare that the response content
 		  // is being GZIP encoded, you can test and debug comment this line!
 		  
 		  chain.doFilter(request, wrappedResp); // Chain to the next component
