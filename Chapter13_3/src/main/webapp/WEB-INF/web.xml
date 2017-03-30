@@ -34,4 +34,15 @@
         	</auth-constraint>
         	
         </security-constraint>
+        
+        <filter>
+        	<filter-name>CompressionFilter</filter-name>
+        	<filter-class>com.andrius.project.Chapter13_3.filters.CompressionFilter</filter-class>
+        </filter>
+        
+        <filter-mapping>
+        	<filter-name>CompressionFilter</filter-name>
+        	<url-pattern>/index.jsp</url-pattern>
+        </filter-mapping>
+        
     </web-app>
